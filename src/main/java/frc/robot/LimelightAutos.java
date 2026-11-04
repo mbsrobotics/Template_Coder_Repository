@@ -15,7 +15,7 @@ public class LimelightAutos {
     private final DriveSubsystem drive;
 
     private static final double TARGET_DISTANCE_METERS = 1.0;
-    private static final double DISTANCE_TOLERANCE = 0.2;
+    private static final double DISTANCE_TOLERANCE = 0.5;
     private static final double TX_TOLERANCE = 1.5;
 
     private static final double DISTANCE_KP = 0.8;
