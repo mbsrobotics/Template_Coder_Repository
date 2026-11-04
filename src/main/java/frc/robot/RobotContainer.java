@@ -44,7 +44,13 @@ public class RobotContainer {
         + limelightFunctions.getCameraNames());
 
         // Build your existing PathPlanner auto list.
-        autoChooser = AutoBuilder.buildAutoChooser();
+        autoChooser = AutoBuilder.buildAutoChooserWithOptionsModifier(
+        (stream) -> stream.filter(
+                auto -> !auto.getName().equals("ExampleAuto")
+        )
+        );
+
+        
 
         // Add Follow Tag as a standalone selectable option.
         autoChooser.addOption(
